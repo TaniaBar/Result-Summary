@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#bigbox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(300px, calc(100vh / 2));
+    border-style: groove;
+}
+
+.first-box {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    gap: 0;
+    justify-self: end;
+    justify-content: space-around;
+    border-style: groove;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 16em;
+    height: 21em;
+    
+}
+
+.first-box h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.first-box p {
+    text-align: center;
+}
+
+.second-box {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    justify-content: space-around;
+    border-style: groove;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 16em;
+    height: 21em;
+}
+
+.second-box div {
+    border-style: groove;
+    border-radius: 7px;
+    margin-top: 20px;
+    padding: 6px 5px;
+}
+
+.second-box button {
+    border-style: groove;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.attribution {
+    display: none;
+}
+
+/*
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+}
+
+#bigbox {
+    display: flex;
+    justify-content: center;
+    border-style: groove;
+    width: 34em;
+}
+
+.first-box {
+    border-style: groove;
+    border-radius: 20px;
+    width: 16em;
+    height: 21em;
+}
+
+.first-box p {
+    justify-content: space-around ;
+}
+
+.second-box {
+    border-style: groove;
+    border-radius: 20px;
+    width: 16em;
+    height: 21em;
+}
+
+.attribution {
+    align-self: flex-end;
+    display: none;
+}
+*/
